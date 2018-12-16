@@ -34,6 +34,11 @@
   height: 500px;
   width: 100%;
 }
+.center-block {
+   margin-left:auto;
+   margin-right:auto;
+   display:block;
+}
 </style>
 
 </head>
@@ -367,9 +372,9 @@
               <div class = "row">
                 <div class = "col-md-4">
                   <div class="card">
-                      <div class="card-body" style="border-style: 1px solid black margin-bottom:100px">
-                        <h1 id="head1" text-center></h1>
-                        <button href="" class="btn btn-primary" style = "margin-top: 10px"><a id = "link1">Recipe 1</a></button>
+                      <div class="card-body">
+                        <h1 id="head1" class = "text-center"></h1>
+                        <button class="btn btn-success center-block" style = "margin-top: 10px"><a id = "link1"><h2 style = "font-size:15px">Explore</h2></a></button>
                    <br>
                 </div>
               </div>
@@ -378,10 +383,10 @@
             </span>
             <div class = "col-md-4">
               <div class="card">
-                <div class="card-body" style="border-style: 1px solid black">
-                  <h1 id = "head2"></h1>
+                <div class="card-body">
+                  <h1 id = "head2" class = "text-center"></h1>
                 
-                  <button href="" class="btn btn-primary" style = "margin-top: 10px"><a id = "link2">Recipe 2</a></button>
+                  <button href="" class="btn btn-warning center-block" style = "margin-top: 10px "><a id = "link2"><h2 style = "font-size:15px">Explore</h2></a></button>
                    <br>
                 </div>
               </div>
@@ -389,10 +394,10 @@
             <span></span>
             <div class = "col-md-4">
               <div class="card">
-                <div class="card-body" style="border-style: 1px solid black margin-bottom:100px">
-                  <h1 id = "head3"></h1>
+                <div class="card-body">
+                  <h1 id = "head3" class = "text-center"></h1>
                 
-                  <button href="" class="btn btn-primary" style = "margin-top: 10px"><a id = "link3">Recipe 3</a></button>
+                  <button href="" class="btn btn-info center-block" style = "margin-top: 10px"><a id = "link3"><h2 style = "font-size:15px">Explore</h2></a></button>
                    <br>
                 </div>
               </div>
@@ -405,9 +410,9 @@
           document.getElementById("head2").innerText=secondDish;
           document.getElementById("head3").innerText=thirdDish;
 
-          document.getElementById("head1").href=fisrtLink;
-          document.getElementById("head2").href=secondLink;
-          document.getElementById("head3").href=thirdLink;
+          document.getElementById("link1").href=fisrtLink;
+          document.getElementById("link2").href=secondLink;
+          document.getElementById("link3").href=thirdLink;
         }
         }
       };
